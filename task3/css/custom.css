@@ -288,3 +288,19 @@ animation-name: example;
 .photo img{
 	width: 100%;
 }
+.slideLeft{
+	animation-name: slideleft;
+	animation-duration: 1s;
+}
+@keyframes slideleft{
+	from {transform: translateX(100%);}
+	to {transform: translateX(0);}
+}
+.slideBottom{
+	animation-name: slidebottom;
+	animation-duration: 1s;
+}
+@keyframes slidebottom{
+	from {transform: translateY(-100%);}
+	to {transform: translateY(0);}
+}
