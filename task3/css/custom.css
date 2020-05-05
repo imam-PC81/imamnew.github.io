@@ -270,8 +270,12 @@ animation-name: example;
 .footer-2 .text span{
 	color:#ffffff;
 }
+@font-face {
+  font-family: webdingsss;
+  src: url("../fonts/webdings.ttf");
+}
 .footer-2 .text love{
-	font-family: Webdings, sans-serif;
+	font-family: webdingsss;
 	color:#e84545;
 }
 .footer-2 .container{
