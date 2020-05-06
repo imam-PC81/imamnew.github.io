@@ -23,6 +23,10 @@ a.nav-link{
 	font-size: 13px;
 	font-weight: bold;
 	font-kerning: Metrics;
+	transition: 1s;
+}
+a.nav-link:hover{
+	box-shadow: 0 0px 10px 5px #66697e !important;
 }
 li.nav-item{
 	padding:0px 30px;
@@ -42,11 +46,29 @@ li.nav-item:last-child{
 	padding:40px 0 !important;
 	border-bottom: 1px solid #505269;
 }
+.navbar.navbar-expand-lg.navbar-dark.fixed{
+	position: fixed!important;
+    top: 0;
+	z-index: 999;
+    background: #2a2e48;
+	transition: 1s;
+	width: 100%;
+}
+.fixed .border_bottom.container{
+	padding:10px 0 !important;
+	border-bottom: none;
+}
 .header h1{
 	margin-top: 145px;
 	font-family: 'Open Sans', sans-serif;
 	font-size:65px;
 	font-weight: bold;
+}
+@media (max-width: 425px){
+	.header h1{
+		margin-top: 70px;
+		font-size:2rem;
+	}
 }
 .header .leadText{
 	margin-top: 20px;
@@ -64,6 +86,14 @@ li.nav-item:last-child{
 	background: #e84545;
 	padding:15px 50px;
 	border-radius: 5px;
+	transition: 1s;
+}
+.bTn:hover{
+	color: #e84545 !important;
+    text-decoration: none;
+    background:#fff;
+    box-shadow: 0 0px 10px 5px #e84545 !important;
+	transition: 1s;
 }
 .f-wrap {
     padding: 0 15px;
@@ -124,6 +154,9 @@ li.nav-item:last-child{
 animation-name: example;
   animation-duration: 1s;
 	opacity: 1;
+}
+.works .over_hidden{
+	border: 1px solid #fff;
 }
 
 @keyframes example{
@@ -303,4 +336,12 @@ animation-name: example;
 @keyframes slidebottom{
 	from {transform: translateY(-100%);}
 	to {transform: translateY(0);}
+}
+.fadeIn{
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+@keyframes fadeIn{
+	from {opacity: 0.5;}
+	to {opacity: 1;}
 }
