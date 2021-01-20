@@ -1,7 +1,0 @@
-# https://browserl.ist/
-
-defaults
-not dead
-> 1%
-ie >=11
-
