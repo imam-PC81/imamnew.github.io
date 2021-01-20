@@ -1,0 +1,32 @@
+  .sample th,
+  .sample td{
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+  }
+  .sample th{
+      background: #F0F3F8;
+  }
+dl.idb {
+  margin-top: -10px;
+  *zoom: 1; }
+  dl.idb:after {
+    content: "";
+    display: block;
+    clear: both; }
+  dl.idb dt {
+    clear: both;
+    float: left;
+    margin-right: 5px;
+    padding-top: 10px;
+    vertical-align: top;
+    line-height: 1.3; }
+    dl.idb dt.colspan {
+      float: none;
+      margin-right: 0; }
+  dl.idb dd {
+    overflow: hidden;
+    padding: 10px 10px 0 0;
+    vertical-align: top;
+    line-height: 1.3; }
+    dl.idb dd.colspan {
+      padding-top: 0; }

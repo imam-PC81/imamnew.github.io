@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// -------------------------------
+// include files
+//記述順としては
+//1.reset.scss
+//2.grid.scss
+//3.common.scss
+//4.component.scss
+//の記述順でcommon.cssを生成
+// -------------------------------
+@forward "reset";
+@forward "grid";
+@forward "_common";
+@forward "_component";
+// ---
+@forward "parachute";
